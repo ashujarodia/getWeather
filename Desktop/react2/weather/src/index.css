@@ -1,24 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Cinzel:wght@500&family=Dosis:wght@200&family=Josefin+Sans&family=Lato&family=Montserrat:wght@300&family=Noto+Serif+Devanagari:wght@100&family=Nunito&family=Open+Sans&family=Quicksand:wght@300&family=Raleway:wght@300&family=Roboto:wght@300&family=Rubik:wght@300;400&family=Ubuntu:ital,wght@1,300&display=swap');
 
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     margin: 0%;
     padding: 0%;
     font-family: 'Nunito', serif;
 }
 
-/* .App {
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(68, 68, 68);
-    color: white;
-    position: relative;
-} */
+
 
 .App {
     background: url("bg-image.jpg") no-repeat center center/cover;
     width: 100%;
-    /* height: 100vh; */
     position: absolute;
     top: 0;
     left: 0;
@@ -27,189 +20,51 @@
 
 }
 
-.input-button{
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    margin:  auto;
-    position: relative;
-    align-items: center;
-   
+.cityName h1{
+    font-size: 3rem;
 }
 
-.form__group {
-    position: relative;
-    padding: 10px 10px;
-  }
-
-.form__field {
-    font-family: inherit;
-    /* width: 50%; */
-    border: 0;
-    border-bottom: 2px solid #9b9b9b;
-    outline: 0;
-    font-size: 1.3rem;
-    color: #fff;
-    padding: 3px 0;
-    background: transparent;
-    transition: border-color 0.2s;
-}
-
-.form__field::placeholder {
-    color: transparent;
-}
-
-.form__field:placeholder-shown~.form__label {
-    font-size: 0.9rem;
-    cursor: text;
-    top: 20px;
-}
-
-.form__label {
-    position: absolute;
-    top: 0;
-    display: block;
-    transition: 0.2s;
-    font-size: 1.1rem;
-    color: #9b9b9b;
-}
-
-.form__field:focus {
-    padding-bottom: 6px;
-    font-weight: 400;
-    border-width: 3px;
-    border-image: linear-gradient(to right, #11998e, #38ef7d);
-    border-image-slice: 1;
-}
-
-.form__field:focus~.form__label {
-    position: absolute;
-    top: 0;
-    display: block;
-    transition: 0.2s;
-    font-size: 0.9rem;
-    color: #11998e;
-    font-weight: 500;
-}
-
-/* reset input */
-.form__field:required,
-.form__field:invalid {
-    box-shadow: none;
-}
-
-/* button css */
-
-button {
-    --c: #fff;
-    /* text color */
-
-    background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p, 100%) / 300% no-repeat,
-        #e97f02;
-    /* background color */
-    color: #0000;
-    border: none;
-    transform: perspective(500px) rotateY(calc(20deg * var(--_i, -1)));
-    text-shadow: calc(var(--_i, -1) * 0.08em) -0.01em 0 var(--c),
-        calc(var(--_i, -1) * -0.08em) 0.01em 2px #0004;
-    outline-offset: 0.1em;
-    transition: 0.3s;
-}
-
-button:hover,
-button:focus-visible {
-    --_p: 0%;
-    --_i: 1;
-}
-
-button:active {
-    text-shadow: none;
-    color: var(--c);
-    box-shadow: inset 0 0 9e9q #0005;
-    transition: 0s;
-}
-
-button {
-    font-family: system-ui, sans-serif;
-    font-weight: bold;
-    font-size: 1rem;
-    margin: 0;
-    cursor: pointer;
-    padding: 0.1em 0.3em;
-  }
-  
-
-.contain {
-    width: 60%;
-    /* text-align: center; */
-    margin: auto 3rem;
-
-}
-
-.cityName {
-    
-  width: 20%;
-    margin: 80px 10px;
-
-}
-
-.temp {
+.tempData .temp {
     font-size: 7rem;
 }
 
-.tempData {
-    padding: px;
-    display: flex;
-    align-items: center;
+.tempUnit p {
+    font-size: 30px;
 }
 
-.tempUnit {
-    font-size: 2rem;
-    display: flex;
-    flex-direction: column;
-    float: left;
 
-}
 
-.tempDataContainer {
-    display: flex;
-    flex-direction: column;
-}
+
+
+
+
+
 
 .weatherDetailsContainer {
+   
     background-color: rgba(32, 22, 22, 0.6);
-    width: 80%;
-    margin: auto;
+    
+  
     border-radius: 10px;
-    padding: 4px;
+    
 }
 
 
-.weatherDetails {
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    padding: 1rem;
 
-
-
-
-}
 
 .max-min {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: space-around;
+    
+    
+  
     background-color: rgba(255, 255, 255, 0.2);
-    width: 330px;
-    margin: 2rem auto;
-    border-radius: 5px;
-    padding: 5px;
+   
+    
+    border-radius: 8px;
+   
 }
 
 .font-size-large {
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .font-size-small{
